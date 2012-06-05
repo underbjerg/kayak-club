@@ -23,7 +23,7 @@
     <% @event_occurrence.event_registrations.each do |registration| %>
         <tr>
           <td><%= registration.user.full_name %></td>
-          <td><%= registration.user.phone_number %></td>
+          <td><%= link_to registration.user.phone_number, "tel:#{registration.user.phone_number}" %></td>
         </tr>
     <% end %>
   </tbody>
