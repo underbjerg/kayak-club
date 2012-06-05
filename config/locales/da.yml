@@ -1,8 +1,23 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+da:
   hello: "Hej verden!"
+  name:   "Navn"
+  description:  "Beskrivelse"
+  phone:  "Telfon"
+  site:
+    title: "KajakPiloterne"
+    description: "Velkommen til medlemssiderne"
   user:
-    login: Log in
-    register: Registrer
+    login: "Log in"
+    register: "Registrér"
+  event:
+    location: "Sted"
+  event_occurrences:
+    title:  "Events"
+  event_occurrence:
+    join:   "Tilmeld"
+    unjoin: "Afmeld"
+    time:   "Tidspunkt"
+    registrations: "Tilmeldinger"

@@ -2,19 +2,19 @@
 
 <p><%= t('event.location') %>: <%= @event_occurrence.event.location %></p>
 
-<h3><%= t('event.time') %></h3>
+<h3><%= t('event_occurrence.time') %></h3>
 <%= @event_occurrence.time_to_s %>
 
 <h3><%= t('description') %></h3>
 <%= simple_format @event_occurrence.event.description %>
 
-<h2><%= t('event.registrations') %></h2>
+<h2><%= t('event_occurrence.registrations') %></h2>
 
 <table class="table">
   <thead>
     <tr>
-      <th>Navn</th>
-      <th>Telefon</th>
+      <th><%= t 'name' %></th>
+      <th><%= t 'phone' %></th>
     </tr>
   </thead>
   <tbody>

@@ -3,11 +3,21 @@
 
 en:
   hello: "Hello world"
+  name:   "Name"
+  description:  "Description"
+  phone:  "Phone"
   site:
-    title: "Kajak Piloterne"
+    title: "KajakPiloterne"
     description: "Welcome to the membership pages"
   user:
-    login: Sign in
-    register: Register
-  event_occurences:
-    title:  Events
+    login: "Sign in"
+    register: "Register"
+  event:
+    location: "Location"
+  event_occurrences:
+    title:  "Events"
+  event_occurrence:
+    join:   "Join"
+    unjoin: "Unjoin"
+    time:   "Time"
+    registrations: "Registrations"
