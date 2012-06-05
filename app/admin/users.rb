@@ -14,6 +14,8 @@ ActiveAdmin.register User do
       f.input :first_name
       f.input :last_name
       f.input :email, :as => :email
+      f.input :password, :as => :password
+      f.input :password_confirmation, :as => :password
       f.input :phone_number, :as => :phone
       f.input :admin
     end
