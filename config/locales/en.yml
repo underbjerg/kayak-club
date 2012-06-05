@@ -6,12 +6,13 @@ en:
   name:   "Name"
   description:  "Description"
   phone:  "Phone"
+  sign_in: "Sign in"
+  sign_out: "Logout"
+  register: "Register"
+  edit_profile: "Edit profile"
   site:
     title: "KajakPiloterne"
     description: "Welcome to the membership pages"
-  user:
-    login: "Sign in"
-    register: "Register"
   event:
     location: "Location"
   event_occurrences:
@@ -21,3 +22,8 @@ en:
     unjoin: "Unjoin"
     time:   "Time"
     registrations: "Registrations"
+  event_registration:
+    created: "Registration stored"
+    creation_failed: "Registration could not be stored"
+    deleted: "Registration deleted"
+    not_found: "Event occurence not found"

@@ -1,5 +1,7 @@
 
 class EventRegistrationsController < ApplicationController
+  before_filter :authenticate_user!
+
   def create
     @event_registration = current_user.event_registrations.build(params[:event_registration])
     if @event_registration.save
