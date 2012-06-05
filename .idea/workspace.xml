@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7b07b6-2001-415b-b14e-edfd834a7812" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/event_occurrences_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/event_occurrences_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/event_occurrences/show.html.erb" afterPath="$PROJECT_DIR$/app/views/event_occurrences/show.html.erb" />
     </list>
     <ignored path="kayak-club.iws" />
@@ -46,7 +45,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="95" selection-start="800" selection-end="800" vertical-scroll-proportion="0.7653061">
+            <state line="2" column="138" selection-start="184" selection-end="184" vertical-scroll-proportion="0.06122449">
               <folding />
             </state>
           </provider>
@@ -1075,7 +1074,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="95" selection-start="800" selection-end="800" vertical-scroll-proportion="0.7653061">
+        <state line="2" column="138" selection-start="184" selection-end="184" vertical-scroll-proportion="0.06122449">
           <folding />
         </state>
       </provider>

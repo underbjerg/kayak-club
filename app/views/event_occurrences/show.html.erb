@@ -1,6 +1,6 @@
 <h1><%= @event_occurrence.event.name %></h1>
 
-<p><%= t('event.location') %>: <%= @event_occurrence.event.location %></p>
+<p><%= t('event.location') %>: <%= link_to @event_occurrence.event.location, "http://maps.google.com/?q=#{@event_occurrence.event.location}" %></p>
 
 <h3><%= t('event_occurrence.time') %></h3>
 <%= @event_occurrence.time_to_s %>
