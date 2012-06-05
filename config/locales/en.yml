@@ -3,3 +3,11 @@
 
 en:
   hello: "Hello world"
+  site:
+    title: "Kajak Piloterne"
+    description: "Welcome to the membership pages"
+  user:
+    login: Sign in
+    register: Register
+  event_occurences:
+    title:  Events

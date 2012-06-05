@@ -1,0 +1,28 @@
+<h1><%= @event_occurrence.event.name %></h1>
+
+<p><%= t('event.location') %>: <%= @event_occurrence.event.location %></p>
+
+<h3><%= t('event.time') %></h3>
+<%= @event_occurrence.time_to_s %>
+
+<h3><%= t('description') %></h3>
+<%= simple_format @event_occurrence.event.description %>
+
+<h2><%= t('event.registrations') %></h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Navn</th>
+      <th>Telefon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @event_occurrence.event_registrations.each do |registration| %>
+        <tr>
+          <td><%= registration.user.full_name %></td>
+          <td><%= registration.user.phone_number %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>

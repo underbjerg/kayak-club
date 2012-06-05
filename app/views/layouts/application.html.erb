@@ -23,11 +23,16 @@
       <a class="brand" href="#">Kayak Club</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <li><%= link_to "Browse Products" %></li>
-          <li><%= link_to "Price List" %></li>
-          <li><%= link_to "Contact Us" %></li>
-          <li><%= link_to "Cart" %></li>
-        </ul>
+          <% if user_signed_in? %>
+            <li><%= link_to t('event_occurences.title'), event_occurrences_path %></li>
+            <% if current_user.admin? %>
+                <li><%= link_to t('menu.admin'), '/admin' %></li>
+            <% end %>
+          <% else %>
+
+          <% end %>
+          <%= render 'devise/menu/registration_items' %>
+          <%= render 'devise/menu/login_items' %>        </ul>
       </div>
     </div>
   </div>

@@ -1,0 +1,13 @@
+
+<% if current_user.event_occurrences.include?(event_occurrence) %>
+    <%= form_for(current_user.event_registrations.find_by_event_occurrence_id(event_occurrence.id), :action => "destroy", :method => :delete) do |f| %>
+        <%= f.button t('unjoin'), :class => "btn btn-danger" %>
+    <% end %>
+<% end %>
+<% if !current_user.event_occurrences.include?(event_occurrence) %>
+
+    <%= form_for(EventRegistration.new(:event_occurrence_id => event_occurrence.id)) do |f| %>
+        <%= f.hidden_field :event_occurrence_id  %>
+        <%= f.button t('join'), :class => "btn btn-success" %>
+    <% end %>
+<% end %>

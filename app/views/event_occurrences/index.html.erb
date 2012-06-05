@@ -1,0 +1,22 @@
+<h1><%= t 'event_occurences.title' %></h1>
+
+<table class="table-striped">
+  <thead>
+    <tr>
+      <th><%= t 'event' %></th>
+      <th><%= t 'event.time' %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @event_occurrences.each do |event_occurrence| %>
+    <tr>
+      <td><%= link_to event_occurrence.event.name, event_occurrence %></td>
+      <td><%= event_occurrence.time_to_s %></td>
+      <td>
+        <%= render :partial => 'form', :locals => {:event_occurrence => event_occurrence} %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
