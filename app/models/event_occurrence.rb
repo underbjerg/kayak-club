@@ -12,7 +12,11 @@ class EventOccurrence < ActiveRecord::Base
   end
 
   def time_to_s
-    start_at.to_formatted_s(:short) + " - " + end_at.to_formatted_s(:short)
+    if start_at.to_date == end_at.to_date
+      start_at.to_date.to_formatted_s(:short) + ", " + start_at.strftime("%H:%M") + "-" + end_at.strftime("%H:%M")
+    else
+      start_at.to_formatted_s(:short) + " - " + end_at.to_formatted_s(:short)
+    end
   end
 
 end
