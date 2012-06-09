@@ -21,7 +21,7 @@ en:
   event:
     location: "Location"
   event_occurrences:
-    title:  "Events"
+    title:  "Upcoming events"
   event_occurrence:
     join:   "Join"
     unjoin: "Unjoin"

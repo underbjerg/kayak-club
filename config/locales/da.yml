@@ -21,7 +21,7 @@ da:
   event:
     location: "Sted"
   event_occurrences:
-    title:  "Events"
+    title:  "Kommende events"
   event_occurrence:
     join:   "Tilmeld"
     unjoin: "Afmeld"
