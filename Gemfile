@@ -32,6 +32,7 @@ gem 'jquery-rails'
 gem 'devise'
 
 gem 'heroku'
+gem 'thin' # better webserver for prod - recommended on heroku.com
 
 # Gems for ActiveAdmin in Rails >= 3.1
 gem 'activeadmin'
