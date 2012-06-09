@@ -11,6 +11,10 @@ da:
   register: "Registrér"
   edit_profile: "Profil"
   please_wait: "Vent..."
+  older: "Ældre"
+  newer: "Nyere"
+  earlier: "Tidligere"
+  later: "Senere"
   site:
     title: "KajakPiloterne"
     description: "Velkommen til medlemssiderne"
@@ -24,6 +28,7 @@ da:
     time:   "Tidspunkt"
     registrations: "Tilmeldinger"
     no_registrations: "Ingen tilmeldinger"
+    about_this_occurrence: "Denne gang"
   event_registration:
     created: "Du er nu tilmeldt"
     creation_failed: "Tilmeldingen kunne ikke gemmes"

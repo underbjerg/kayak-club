@@ -11,6 +11,10 @@ en:
   register: "Register"
   edit_profile: "Edit profile"
   please_wait: "Please wait..."
+  older: "Older"
+  newer: "Newer"
+  earlier: "Earlier"
+  later: "Later"
   site:
     title: "KajakPiloterne"
     description: "Welcome to the membership pages"
@@ -24,6 +28,7 @@ en:
     time:   "Time"
     registrations: "Registrations"
     no_registrations: "No registrations"
+    about_this_occurrence: "This time"
   event_registration:
     created: "Registration stored"
     creation_failed: "Registration could not be stored"

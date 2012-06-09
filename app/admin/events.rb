@@ -21,12 +21,12 @@ ActiveAdmin.register Event do
       f.input :description
     end
 
-    f.inputs "Occurrences" do
-      f.has_many :event_occurrences do |j|
-        j.input :start_at
-        j.input :end_at
-      end
-    end
+    #f.inputs "Occurrences" do
+    #  f.has_many :event_occurrences do |j|
+    #    j.input :start_at
+    #    j.input :end_at
+    #  end
+    #end
 
     f.buttons
   end

@@ -1,5 +1,5 @@
 class EventOccurrence < ActiveRecord::Base
-  attr_accessible :end_at, :start_at
+  attr_accessible :end_at, :start_at, :description, :event_id
 
   belongs_to :event
   accepts_nested_attributes_for :event
