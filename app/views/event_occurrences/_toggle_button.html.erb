@@ -1,0 +1,5 @@
+<% if current_user.event_occurrences.include?(event_occurrence) %>
+    <%= link_to t('event_occurrence.unjoin'), { :controller => :event_registrations, :action => :destroy, :id => current_user.event_registrations.find_by_event_occurrence_id(event_occurrence.id).id}, { :class => "btn btn-danger", :method => :delete } %>
+<% else %>
+    <%= link_to t('event_occurrence.join'), { :controller => :event_registrations, :action => :create, :event_registration => { :event_occurrence_id => event_occurrence.id }}, { :class => "btn btn-success", :method => :post } %>
+<% end %>

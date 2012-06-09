@@ -4,21 +4,29 @@ class EventRegistrationsController < ApplicationController
 
   def create
     @event_registration = current_user.event_registrations.build(params[:event_registration])
-    if @event_registration.save
-      flash[:notice] = t('event_registration.created')
-    else
-      flash[:notice] = t('event_registration.creation_failed')
+    respond_to do |format|
+      if @event_registration.save
+        format.html { redirect_to( event_occurrence_path(@event_registration.event_occurrence), :notice => t('event_registration.created')) }
+        format.js
+      else
+        format.html { redirect_to( event_occurrence_path(@event_registration.event_occurrence), :notice => t('event_registration.creation_failed')) }
+        format.js
+      end
     end
-    redirect_to event_occurrences_path
   end
 
   def destroy
     @event_registration = current_user.event_registrations.find(params[:id])
-    if @event_registration
-      @event_registration.destroy
-      redirect_to event_occurrences_path, :notice => t('event_registration.deleted')
-    else
-      redirect_to event_occurrences_path, :notice => t('event_registration.not_found') + ". id: " + params[:id]
+
+    respond_to do |format|
+      if @event_registration
+        @event_registration.destroy
+        format.html { redirect_to( event_occurrence_path(@event_registration.event_occurrence), :notice => t('event_registration.deleted')) }
+        format.js
+      else
+        format.html { redirect_to( event_occurrence_path(@event_registration.event_occurrence), :notice => t('event_registration.not_found') + ". id: " + params[:id]) }
+        format.js
+      end
     end
   end
 end

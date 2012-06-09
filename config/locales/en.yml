@@ -10,6 +10,7 @@ en:
   sign_out: "Logout"
   register: "Register"
   edit_profile: "Edit profile"
+  please_wait: "Please wait..."
   site:
     title: "KajakPiloterne"
     description: "Welcome to the membership pages"
@@ -22,6 +23,7 @@ en:
     unjoin: "Unjoin"
     time:   "Time"
     registrations: "Registrations"
+    no_registrations: "No registrations"
   event_registration:
     created: "Registration stored"
     creation_failed: "Registration could not be stored"

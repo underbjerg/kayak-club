@@ -10,6 +10,7 @@ da:
   sign_out: "Log ud"
   register: "Registrér"
   edit_profile: "Profil"
+  please_wait: "Vent..."
   site:
     title: "KajakPiloterne"
     description: "Velkommen til medlemssiderne"
@@ -22,6 +23,7 @@ da:
     unjoin: "Afmeld"
     time:   "Tidspunkt"
     registrations: "Tilmeldinger"
+    no_registrations: "Ingen tilmeldinger"
   event_registration:
     created: "Du er nu tilmeldt"
     creation_failed: "Tilmeldingen kunne ikke gemmes"

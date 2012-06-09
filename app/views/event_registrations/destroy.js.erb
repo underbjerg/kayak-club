@@ -1,0 +1,1 @@
+$('#<%= dom_id(@event_registration.event_occurrence) %>').html("<%= escape_javascript( render(:partial => 'event_occurrences/form', :locals => {:event_occurrence => @event_registration.event_occurrence}) ) %>")
