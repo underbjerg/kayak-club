@@ -5,12 +5,23 @@ ActiveAdmin.register Event do
       row :name
       row :location
       row :description
-      f.event_occurrences.each do |occ|
-        row :event_occurrence do
-          occ.time_to_s
+    end
+
+    panel("Event occurrences") do
+      table_for(f.event_occurrences) do
+        column "Time" do |item|
+          link_to item.time_to_s, [:admin, item]
+        end
+        column "Description" do |item|
+          item.description
+        end
+        column "Registrations" do |item|
+          item.event_registrations.count
         end
       end
     end
+
+
     active_admin_comments
   end
 
@@ -27,6 +38,7 @@ ActiveAdmin.register Event do
     #    j.input :end_at
     #  end
     #end
+
 
     f.buttons
   end

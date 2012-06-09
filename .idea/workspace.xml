@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7b07b6-2001-415b-b14e-edfd834a7812" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/da.yml" afterPath="$PROJECT_DIR$/config/locales/da.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/minimal/_next_page.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/minimal/_paginator.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/minimal/_prev_page.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/event_occurrences.rb" afterPath="$PROJECT_DIR$/app/admin/event_occurrences.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/events.rb" afterPath="$PROJECT_DIR$/app/admin/events.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/event.rb" afterPath="$PROJECT_DIR$/app/models/event.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/event_occurrences/index.html.erb" afterPath="$PROJECT_DIR$/app/views/event_occurrences/index.html.erb" />
     </list>
     <ignored path="kayak-club.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +49,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event_occurrences.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="event_occurrences.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/event_occurrences.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="117" selection-start="417" selection-end="417" vertical-scroll-proportion="0.49610895">
+            <state line="7" column="26" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/event.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="54" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/events.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="31" selection-end="528" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,15 +94,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_prev_page.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,28 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_paginator.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="20" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_next_page.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="0" selection-end="138" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="31" selection-start="608" selection-end="608" vertical-scroll-proportion="-14.375">
+            <state line="23" column="51" selection-start="628" selection-end="628" vertical-scroll-proportion="0.70408165">
               <folding />
             </state>
           </provider>
@@ -128,22 +125,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/event_occurrences/_toggle_button.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/errors.css" />
         <option value="$PROJECT_DIR$/app/views/event_occurrences/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/event_registrations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/event_occurrences/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/event_occurrence.rb" />
-        <option value="$PROJECT_DIR$/app/admin/event_occurrences.rb" />
-        <option value="$PROJECT_DIR$/app/admin/events.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/event_occurrences/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb" />
         <option value="$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb" />
         <option value="$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/event_occurrences_controller.rb" />
         <option value="$PROJECT_DIR$/config/locales/da.yml" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
+        <option value="$PROJECT_DIR$/app/models/event.rb" />
+        <option value="$PROJECT_DIR$/app/admin/events.rb" />
+        <option value="$PROJECT_DIR$/app/admin/event_occurrences.rb" />
+        <option value="$PROJECT_DIR$/app/views/event_occurrences/index.html.erb" />
       </list>
     </option>
   </component>
@@ -589,6 +586,10 @@
               <option name="myItemId" value="kaminari" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="minimal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -859,6 +860,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/event_registrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/kaminari/minimal" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: kayak-club">
@@ -1192,34 +1196,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120609180606_add_description_to_event_occurrences.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="32" selection-start="353" selection-end="374" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="106" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/events.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="27" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0">
@@ -1227,30 +1203,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/minimal/_paginator.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="20" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/minimal/_next_page.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="0" selection-end="138" vertical-scroll-proportion="-1.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/minimal/_prev_page.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1265,13 +1234,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/event_occurrences_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="61" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="31" selection-start="608" selection-end="608" vertical-scroll-proportion="-14.375">
           <folding />
         </state>
       </provider>
@@ -1297,9 +1259,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/event.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="54" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/events.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="31" selection-end="528" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/event_registration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/event_occurrences.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="117" selection-start="417" selection-end="417" vertical-scroll-proportion="0.49610895">
+        <state line="7" column="26" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="51" selection-start="628" selection-end="628" vertical-scroll-proportion="0.70408165">
           <folding />
         </state>
       </provider>
