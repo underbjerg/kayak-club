@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= t 'name' %></th>
+    <th><%= t 'event_occurrence.time' %></th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @event_occurrences.each do |event_occurrence| %>
+      <tr>
+        <td><%= link_to event_occurrence.event.name, event_occurrence %></td>
+        <td><%= event_occurrence.time_to_s %></td>
+        <td>
+          <%= render :partial => 'event_occurrences/form', :locals => {:event_occurrence => event_occurrence} %>
+        </td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= paginate @event_occurrences, :theme => 'minimal' %>

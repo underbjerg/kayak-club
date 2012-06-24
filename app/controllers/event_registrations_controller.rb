@@ -1,7 +1,10 @@
 
 class EventRegistrationsController < ApplicationController
   before_filter :authenticate_user!
-  check_authorization
+
+  def index
+    @event_occurrences = current_user.next_event_occurrences.page(params[:page]).per(6)
+  end
 
   def create
     @event_registration = current_user.event_registrations.build(params[:event_registration])

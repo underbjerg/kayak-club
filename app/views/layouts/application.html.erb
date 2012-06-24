@@ -62,8 +62,18 @@
       <%= yield %>
     </div>
     <div class="span3">
-      <h2>Om systemet</h2>
-      <p>Dette er en prototype på et meget simpelt event og tilmeldingssystem til KajakPiloterne.</p>
+      <% if current_user %>
+          <h2><%= t('my_registrations') %></h2>
+          <dl >
+            <% current_user.next_event_occurrences.limit(5).each do |occ| %>
+                <dt><%= occ.event.name %></dt>
+                <dd><%= link_to occ.time_to_s, occ %></dd>
+            <% end %>
+          </dl>
+          <% if current_user.next_event_occurrences.size > 5 %>
+            <%= link_to t('show_more') + "...", event_registrations_path %>
+          <% end %>
+      <% end %>
     </div>
   </div>
 </div>

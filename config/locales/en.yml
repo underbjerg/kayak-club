@@ -32,6 +32,8 @@ en:
   update: "Update"
   registration_being_processed: "Your registration is being processed."
   registration_being_processed_description: "Your registration is waiting to be accepted by an administrator. Once your registration is accepted, you will receive an e-mail notification, and you will be able to join events."
+  my_registrations: "My registrations"
+  show_more: "Show more"
   site:
     title: "KajakPiloterne"
     description: "Welcome to the membership pages"

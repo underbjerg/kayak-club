@@ -1,7 +1,8 @@
 KayakClub::Application.routes.draw do
 
-  post "event_registrations",       :to => "event_registrations#create"
-  delete "event_registrations/:id", :to => "event_registrations#destroy", :as => "event_registration"
+  get     "event_registrations",       :to => "event_registrations#index"
+  post    "event_registrations",       :to => "event_registrations#create"
+  delete  "event_registrations/:id",   :to => "event_registrations#destroy", :as => "event_registration"
 
   ActiveAdmin.routes(self)
   devise_for :admin_users, ActiveAdmin::Devise.config

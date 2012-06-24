@@ -32,6 +32,8 @@ da:
   update: "Opdater"
   registration_being_processed: "Din registrering er under behandling."
   registration_being_processed_description: "Din registrering venter på at blive godkendt af en administrator. Når din registrering bliver accepteret, vil du modtage en e-mail, og være i stand til at tilmelde dig events."
+  my_registrations: "Mine tilmeldinger"
+  show_more: "Vis flere"
   site:
     title: "KajakPiloterne"
     description: "Velkommen til medlemssiderne"

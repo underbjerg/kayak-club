@@ -28,14 +28,11 @@ class User < ActiveRecord::Base
   end
 
   def active_for_authentication?
-    # Comment out the below debug statement to view the properties of the returned self model values.
-    # logger.debug self.to_yaml
-
     super && approved?
   end
 
-  #def initialize
-  #  super() # NOTE: This *must* be called, otherwise states won't get initialized
-  #end
+  def next_event_occurrences
+    self.event_occurrences.where("end_at >= ?", Time.now).order("start_at")
+  end
 
 end
