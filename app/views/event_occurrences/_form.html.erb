@@ -1,12 +1,16 @@
 <%= div_for event_occurrence do %>
     <% if current_user.event_occurrences.include?(event_occurrence) %>
-        <%= form_for(current_user.event_registrations.find_by_event_occurrence_id(event_occurrence.id), :action => "destroy", :method => :delete, :remote => true) do |f| %>
-            <%= button_tag t('event_occurrence.unjoin'), :type => :submit, :disable_with => t('please_wait'), :class => "btn btn-danger" %>
+        <% if can? :destroy, EventRegistration %>
+            <%= form_for(current_user.event_registrations.find_by_event_occurrence_id(event_occurrence.id), :action => "destroy", :method => :delete, :remote => true) do |f| %>
+                <%= button_tag t('event_occurrence.unjoin'), :type => :submit, :disable_with => t('please_wait'), :class => "btn btn-danger" %>
+            <% end %>
         <% end %>
     <% else !current_user.event_occurrences.include?(event_occurrence) %>
-        <%= form_for(EventRegistration.new(:event_occurrence_id => event_occurrence.id), :remote => true) do |f| %>
-            <%= f.hidden_field :event_occurrence_id  %>
-            <%= button_tag t('event_occurrence.join'), :type => :submit, :disable_with => t('please_wait'), :class => "btn btn-success" %>
-        <% end %>
+        <% if can? :create, EventRegistration %>
+            <%= form_for(EventRegistration.new(:event_occurrence_id => event_occurrence.id), :remote => true) do |f| %>
+                <%= f.hidden_field :event_occurrence_id  %>
+                <%= button_tag t('event_occurrence.join'), :type => :submit, :disable_with => t('please_wait'), :class => "btn btn-success" %>
+            <% end %>
+         <% end %>
     <% end %>
 <% end %>

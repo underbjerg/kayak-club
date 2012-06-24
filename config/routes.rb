@@ -5,7 +5,9 @@ KayakClub::Application.routes.draw do
 
   ActiveAdmin.routes(self)
   devise_for :admin_users, ActiveAdmin::Devise.config
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "registrations" } do
+    get 'users/registration_received', :to => 'registrations#registration_received'
+  end
 
   resources :event_occurrences, :only => [:index, :show]
 
@@ -60,7 +62,8 @@ KayakClub::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+  #root :to => 'home#index'
+  root :to => 'event_occurrences#index'
 
   # See how all your routes lay out with "rake routes"
 

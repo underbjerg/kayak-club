@@ -5,16 +5,33 @@ da:
   hello: "Hej verden!"
   name:   "Navn"
   description:  "Beskrivelse"
+  first_name: "Fornavn"
+  last_name: "Efternavn"
   phone:  "Telefon"
+  phone_number: "Telefon"
+  email: "E-mail"
+  password: "Kodeord"
+  password_confirmation: "Bekræft kodeord"
+  current_password: "Nuværende kodeord"
   sign_in: "Log ind"
   sign_out: "Log ud"
   register: "Registrér"
+  forgot_password: "Glemt kodeord?"
+  send_me_reset_password_instructions: "Send mig nyt kodeord"
+  remember_me: "Husk mig"
   edit_profile: "Profil"
   please_wait: "Vent..."
   older: "Ældre"
   newer: "Nyere"
   earlier: "Tidligere"
   later: "Senere"
+  approve: "Godkend"
+  reject: "Afvis"
+  approved: "Godkendt"
+  rejected: "Afvist"
+  update: "Opdater"
+  registration_being_processed: "Din registrering er under behandling."
+  registration_being_processed_description: "Din registrering venter på at blive godkendt af en administrator. Når din registrering bliver accepteret, vil du modtage en e-mail, og være i stand til at tilmelde dig events."
   site:
     title: "KajakPiloterne"
     description: "Velkommen til medlemssiderne"
@@ -34,6 +51,7 @@ da:
     creation_failed: "Tilmeldingen kunne ikke gemmes"
     deleted: "Du er nu afmeldt"
     not_found: "Event tid ikke fundet"
+
 
   active_admin:
     dashboard: "Administration"
@@ -258,6 +276,9 @@ da:
       even: "skal være lige"
 
   activerecord:
+    attributes:
+      user:
+        email: "E-mail"
     errors:
       template:
         header:

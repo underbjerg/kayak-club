@@ -2,6 +2,13 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
+
+    if user.approved?
+      can :manage, EventRegistration
+      can :create, EventRegistration
+      can :show, EventOccurrence
+    end
+
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)

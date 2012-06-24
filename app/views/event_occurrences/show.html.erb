@@ -13,30 +13,33 @@
 <h3><%= t('description') %></h3>
 <%= simple_format @event_occurrence.event.description %>
 
-<%= render :partial => 'toggle_button', :locals => {:event_occurrence => @event_occurrence} %>
+<% if can? :show, EventRegistration %>
+
+    <%= render :partial => 'toggle_button', :locals => {:event_occurrence => @event_occurrence} %>
 
 
-<h2><%= t('event_occurrence.registrations') %></h2>
+    <h2><%= t('event_occurrence.registrations') %></h2>
 
-<% if @event_occurrence.event_registrations.count < 1  %>
-    <p><%= t('event_occurrence.no_registrations') %></p>
-<% else %>
+    <% if @event_occurrence.event_registrations.count < 1  %>
+        <p><%= t('event_occurrence.no_registrations') %></p>
+    <% else %>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th><%= t 'name' %></th>
-          <th><%= t 'phone' %></th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @event_occurrence.event_registrations.each do |registration| %>
+        <table class="table">
+          <thead>
             <tr>
-              <td><%= registration.user.full_name %></td>
-              <td><%= link_to registration.user.phone_number, "tel:#{registration.user.phone_number}" %></td>
+              <th><%= t 'name' %></th>
+              <th><%= t 'phone' %></th>
             </tr>
-        <% end %>
-      </tbody>
-    </table>
+          </thead>
+          <tbody>
+            <% @event_occurrence.event_registrations.each do |registration| %>
+                <tr>
+                  <td><%= registration.user.full_name %></td>
+                  <td><%= link_to registration.user.phone_number, "tel:#{registration.user.phone_number}" %></td>
+                </tr>
+            <% end %>
+          </tbody>
+        </table>
 
+    <% end %>
 <% end %>

@@ -4,13 +4,13 @@
   <%= devise_error_messages! %>
   <%= f.hidden_field :reset_password_token %>
 
-  <div><%= f.label :password, "New password" %><br />
-  <%= f.password_field :password %></div>
+  <%= f.label :password, t("new_password") %>
+  <%= f.password_field :password %>
 
-  <div><%= f.label :password_confirmation, "Confirm new password" %><br />
-  <%= f.password_field :password_confirmation %></div>
+  <%= f.label :password_confirmation, t("password_confirmation") %>
+  <%= f.password_field :password_confirmation %>
 
-  <div><%= f.submit "Change my password" %></div>
+  <div><%= f.submit t("change_my_password"), :class => "btn" %></div>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>
