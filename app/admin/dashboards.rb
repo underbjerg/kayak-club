@@ -3,7 +3,28 @@ ActiveAdmin::Dashboards.build do
   # Define your dashboard sections here. Each block will be
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.
-  
+
+  section "Pending user registrations" do
+    table_for User.where(:state => "new").order("created_at desc").limit(15) do
+      column :id
+      column "Name" do |user|
+        link_to user.full_name, admin_user_path(user)
+      end
+      column :email
+      column :phone_number
+      column :state
+      column :created_at
+      column "" do |user|
+        link_to "Approve", approve_admin_user_path(user)
+      end
+      column "" do |user|
+        link_to "Reject", reject_admin_user_path(user)
+      end
+    end
+    strong { link_to "View All Users", admin_users_path }
+  end
+
+
   # == Simple Dashboard Section
   # Here is an example of a simple dashboard section
   #
