@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7b07b6-2001-415b-b14e-edfd834a7812" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/dashboards.rb" afterPath="$PROJECT_DIR$/app/admin/dashboards.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kayak-club.iml" afterPath="$PROJECT_DIR$/.idea/kayak-club.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/event_occurrences/show.html.erb" afterPath="$PROJECT_DIR$/app/views/event_occurrences/show.html.erb" />
     </list>
     <ignored path="kayak-club.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,21 +26,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="dashboards.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/dashboards.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="45" selection-start="2392" selection-end="2392" vertical-scroll-proportion="-13.75">
-              <folding>
-                <marker date="1340568959000" expanded="true" signature="2127:2263" placeholder="do ... end" />
-              </folding>
+            <state line="21" column="9" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboards.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/admin/dashboards.rb">
+      <file leaf-file-name="event_occurrences_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/event_occurrences_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="625" selection-end="625" vertical-scroll-proportion="0.5252918">
+            <state line="8" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="13" selection-start="701" selection-end="701" vertical-scroll-proportion="0.11405295">
               <folding />
             </state>
           </provider>
@@ -71,37 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="0" selection-end="79" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/event_registrations/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event_registrations_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/event_registrations_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_table.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/_table.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="56" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+            <state line="11" column="72" selection-start="308" selection-end="308" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
@@ -129,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
@@ -138,13 +119,14 @@
         <option value="$PROJECT_DIR$/app/views/event_occurrences/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/event_occurrences/_table.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/event_registrations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/event_registrations/index.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/da.yml" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/admin/dashboards.rb" />
+        <option value="$PROJECT_DIR$/app/views/event_occurrences/_table.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/event_occurrences/show.html.erb" />
       </list>
     </option>
   </component>
@@ -179,6 +161,26 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="RailsProjectView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kayak-club" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -447,26 +449,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="RailsProjectView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kayak-club" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -747,10 +729,10 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26838234" sideWeight="0.6702381" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27144608" sideWeight="0.67142856" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297619" sideWeight="0.50306374" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32857144" sideWeight="0.50306374" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297619" sideWeight="0.49509802" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -818,116 +800,94 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@periscop/gems/devise-2.1.0/app/controllers/devise/registrations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="2725" selection-end="3146" vertical-scroll-proportion="0.6128405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/_toggle_button.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/event_occurrence.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="83" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="83" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="72" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/event_occurrences_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="107" selection-end="224" vertical-scroll-proportion="0.17509727">
-          <folding />
-        </state>
+        <state line="2" column="72" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="75" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="34" column="75" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/_table.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="73" column="45" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="165" selection-end="185" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="20" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+        <state line="8" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/dashboards.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="9" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/event_registrations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+        <state line="3" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.029880479">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/event_registrations/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="72" selection-end="72" vertical-scroll-proportion="0.061099797">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/da.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="19" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0">
+        <state line="35" column="19" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/event_occurrences_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/_table.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="20" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0">
+        <state line="11" column="72" selection-start="308" selection-end="308" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/event_occurrences/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="0" selection-end="79" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="45" selection-start="2392" selection-end="2392" vertical-scroll-proportion="-13.75">
-          <folding>
-            <marker date="1340568959000" expanded="true" signature="2127:2263" placeholder="do ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="165" selection-end="185" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/dashboards.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="625" selection-end="625" vertical-scroll-proportion="0.5252918">
+        <state line="18" column="13" selection-start="701" selection-end="701" vertical-scroll-proportion="0.11405295">
           <folding />
         </state>
       </provider>
