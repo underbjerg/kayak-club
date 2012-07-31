@@ -25,6 +25,9 @@ class User < ActiveRecord::Base
     event :reject do
       transition [:new, :approved] => :rejected
     end
+
+    after_transition :on => :approve, :do => :send_account_approved_email
+    after_transition :on => :reject, :do => :send_account_rejected_email
   end
 
   def active_for_authentication?
@@ -33,6 +36,13 @@ class User < ActiveRecord::Base
 
   def next_event_occurrences
     self.event_occurrences.where("end_at >= ?", Time.now).order("start_at")
+  end
+
+  def send_account_approved_email
+    UserMailer.account_approved(self).deliver
+  end
+  def send_account_rejected_email
+    UserMailer.account_rejected(self).deliver
   end
 
 end

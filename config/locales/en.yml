@@ -2,7 +2,8 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  hello: "Hello"
+  welcome: "Welcome"
   name:   "Name"
   description:  "Description"
   first_name: "Fornavn"
@@ -53,3 +54,14 @@ en:
     creation_failed: "Registration could not be stored"
     deleted: "Registration deleted"
     not_found: "Event occurence not found"
+  mail:
+    password_change_request: "Someone has requested a link to change your password, and you can do this through the link below."
+    password_change_request_ignore: "If you didn't request this, please ignore this email."
+    password_change_request_footer: "Your password won't change until you access the link above and create a new one."
+    welcome_to_kajakpiloterne: "Welcome to KajakPiloterne"
+    account_approved: "Your account has been approved. You can use the link below to login."
+    account_rejected_subject: "Account request rejected"
+    account_rejected: "Your request to create an account has been rejected."
+    account_created_subject: "Account created"
+    account_created: "Your account has been created. You can use the link below to login with this password"
+

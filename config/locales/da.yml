@@ -2,7 +2,8 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 da:
-  hello: "Hej verden!"
+  hello: "Hej"
+  welcome: "Velkommen"
   name:   "Navn"
   description:  "Beskrivelse"
   first_name: "Fornavn"
@@ -53,7 +54,16 @@ da:
     creation_failed: "Tilmeldingen kunne ikke gemmes"
     deleted: "Du er nu afmeldt"
     not_found: "Event tid ikke fundet"
-
+  mail:
+    password_change_request: "Nogen har bedt om et link til at skifte dit kodeord, og det kan du gøre via linket nedenfor."
+    password_change_request_ignore: "Hvis du ikke har bedt om dette, så ignorer venligst denne e-mail"
+    password_change_request_footer: "Dit kodeord bliver ikke skiftet før du benytter linket ovenfor til at skabe et nyt."
+    welcome_to_kajakpiloterne: "Velkommen til KajakPiloterne"
+    account_approved: "Din konto er blevet godkendt. Du kan bruge linket nedenfor til at logge ind."
+    account_rejected_subject: "Kontooprettelse afvist"
+    account_rejected: "Din anmodning om at oprette en konto er blevet afvist."
+    account_created_subject: "Konto oprettet"
+    account_created: "Din konto er blevet oprettet. Du kan bruge linket nedenfor til at logge ind med kodeordet"
 
   active_admin:
     dashboard: "Administration"
